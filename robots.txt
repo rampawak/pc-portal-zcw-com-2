@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rampawak.github.io/pc-portal-zcw-com-2/sitemap.xml

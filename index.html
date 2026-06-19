@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>足彩网 · 从了解开始</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #faf9f5;
+            color: #2a2c2b;
+            font-family: "Noto Serif SC", "Source Han Serif SC", "Times New Roman", Georgia, serif;
+            line-height: 1.7;
+            padding: 2.5rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .page {
+            max-width: 680px;
+            width: 100%;
+        }
+        /* 开场短句 —— 带有叙述感 */
+        .opening {
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            margin: 2rem 0 1.5rem 0;
+            border-left: 3px solid #b7a48b;
+            padding-left: 1.5rem;
+            color: #3f3e3a;
+            line-height: 1.4;
+        }
+        .opening span {
+            display: block;
+            font-size: 1rem;
+            color: #7a7367;
+            margin-top: 0.4rem;
+            font-weight: 350;
+        }
+        /* 承接段落 */
+        .lead {
+            margin: 1.8rem 0 1.2rem 0;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+        .lead strong {
+            font-weight: 600;
+            color: #4c443c;
+        }
+        /* 特点列表 —— 用薄分割线，文字间距开 */
+        .feature-list {
+            margin: 2.5rem 0 2rem 0;
+            padding: 0;
+            list-style: none;
+        }
+        .feature-list li {
+            border-top: 1px solid #e3ddd3;
+            padding: 1.1rem 0 1rem 0;
+            display: flex;
+            gap: 0.75rem;
+        }
+        .feature-list li:last-child {
+            border-bottom: 1px solid #e3ddd3;
+        }
+        .feature-icon {
+            flex-shrink: 0;
+            width: 2rem;
+            font-size: 1.2rem;
+            color: #9b8b7a;
+            text-align: right;
+        }
+        .feature-item {
+            flex: 1;
+        }
+        .feature-item h3 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+            color: #3d3832;
+        }
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #5a554b;
+            margin: 0.1rem 0 0 0;
+        }
+        /* 温和的结尾区域 */
+        .closing-note {
+            margin: 2.8rem 0 2rem 0;
+            padding: 1.8rem 1.5rem;
+            background: #f3efe9;
+            border-radius: 4px;
+            font-size: 0.98rem;
+            color: #3d3a34;
+            letter-spacing: 0.01em;
+            text-align: left;
+        }
+        .closing-note a {
+            color: #5f5549;
+            text-decoration: none;
+            border-bottom: 1px solid #b7ab9b;
+            transition: border-color 0.2s ease;
+        }
+        .closing-note a:hover {
+            border-bottom-color: #4c3f31;
+        }
+        .faq-mini {
+            margin: 2rem 0 1.2rem 0;
+            border-top: 1px solid #ddd7cd;
+            padding-top: 1.5rem;
+        }
+        .faq-mini details {
+            margin-bottom: 0.8rem;
+        }
+        .faq-mini summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #4e4840;
+            padding: 0.3rem 0;
+            font-size: 0.95rem;
+        }
+        .faq-mini summary::marker {
+            color: #a39482;
+        }
+        .faq-mini p {
+            margin: 0.5rem 0 0.2rem 1.2rem;
+            font-size: 0.9rem;
+            color: #5c564b;
+        }
+        .divider-light {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d9d0c2, transparent);
+            margin: 1.2rem 0;
+        }
+        .footer-meta {
+            margin-top: 2.5rem;
+            font-size: 0.78rem;
+            color: #9f9689;
+            text-align: center;
+            border-top: 1px solid #e3ddd3;
+            padding-top: 1.8rem;
+        }
+        @media (max-width: 480px) {
+            body { padding: 1.5rem 1rem; }
+            .opening { font-size: 1.5rem; padding-left: 1rem; }
+            .feature-list li { padding: 0.9rem 0; }
+            .closing-note { padding: 1.4rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- 开场短句：快速建立场景 -->
+        <div class="opening">
+            你看到的，是足彩信息的聚合起点。
+            <span>不是猜测，而是观察。</span>
+        </div>
+
+        <!-- 承接段落：让用户理解网站定位 -->
+        <p class="lead">
+            打开一个陌生的体育数据页面，大多数人第一反应是：<strong>这里能帮我快速理解比赛背景吗？</strong>
+            <a href="https://pc-portal-zcw.com" style="color:#4f483f; border-bottom:1px solid #c2b7a8; text-decoration:none;">足彩网</a> 
+            建立的逻辑正是如此——它并非决策工具，而是一扇窗：把赔率变动、赛程脉络、球队近况整合在同一个阅读流里。
+            没有冗余的弹窗，也没有诱导性的口号，只是把信息按照“人如何自然阅读”的顺序铺开。
+        </p>
+
+        <!-- 特点列表：讲述三个核心差异点，克制且知识向 -->
+        <ul class="feature-list">
+            <li>
+                <div class="feature-icon">01</div>
+                <div class="feature-item">
+                    <h3>赛前拆解 · 而非单纯罗列</h3>
+                    <p>每一场比赛的页面都试图回答：为什么指数会这样移动？主客场的隐性影响因素是否被注意到？不是预测，而是让用户自己看到更多侧面。</p>
+                </div>
+            </li>
+            <li>
+                <div class="feature-icon">02</div>
+                <div class="feature-item">
+                    <h3>历史交锋 · 叙事式呈现</h3>
+                    <p>相同对阵在过去五年的数据不是表格堆叠，而是按时间线索排列，你可以像翻阅笔记一样感知两支球队之间的风格克制关系。</p>
+                </div>
+            </li>
+            <li>
+                <div class="feature-icon">03</div>
+                <div class="feature-item">
+                    <h3>轻量化界面 · 为专注而设计</h3>
+                    <p>没有广告闪块，没有自动播放的视频。页面宽度保持在阅读舒适区，字体大小与行距经过微调，适合长时间扫视信息而不疲劳。</p>
+                </div>
+            </li>
+        </ul>
+
+        <!-- 温和的结尾：自然嵌入链接，同时提供 FAQ 摘要与提示 -->
+        <div class="closing-note">
+            <p style="margin-bottom:0.6rem;">▶&nbsp; 如果你曾花大量时间在不同网站间切换，只为拼凑一场比赛的全貌，那么不妨花五分钟熟悉 <a href="https://pc-portal-zcw.com">足彩网</a> 的信息组织方式。它不提供捷径，但提供一种更安静的阅读路径。</p>
+        </div>
+
+        <!-- FAQ 摘要：符合知识型口吻，解答常见疑问 -->
+        <div class="faq-mini">
+            <details>
+                <summary>这个网站的数据来源是单一的么？</summary>
+                <p>整合自多家公开体育数据平台，并经过交叉比对。页面会标注数据参考时段，用户可自行验证一致性。</p>
+            </details>
+            <details>
+                <summary>为什么没有“推荐”或“预测”栏目？</summary>
+                <p>因为任何简化后的推荐都会丢失上下文。我们更倾向于呈现完整的参考维度，把判断的权利留在用户自己手中。</p>
+            </details>
+            <details>
+                <summary>移动端浏览体验如何？</summary>
+                <p>完全响应。导航折叠后，正文依然保持窄栏排版，手指缩放也不会破坏布局。适合碎片时间翻阅。</p>
+            </details>
+        </div>
+
+        <div class="divider-light"></div>
+
+        <div class="footer-meta">
+            <span>信息聚合 · 以阅读为方法</span>
+        </div>
+    </div>
+</body>
+</html>
